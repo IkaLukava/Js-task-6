@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepts && Ingredients mini Aplication</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,300;1,800&family=Poppins:ital,wght@0,100;0,300;0,600;0,700;0,900;1,100;1,200;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400;1,500;1,700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <script src="app.js" ></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../share/share.css">
+
+</head>
+<body style="background-image: url(../share/image/back9);background-position: center; background-size: cover;">
+    <div class="container">
+        <!-- -------------------------HEADER-------------------- -->
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../share/image/logo.jpg" class="logo">
+                </a>
+            </div>
+            <ul id="menuList">
+                <li><a style="text-decoration: none; color: #fff" href="../index.html">Main</a></li>
+                <li><a style="text-decoration: none; color: #fff" href="../recepts/index.html">Recepts</a></li>
+                <li><a style="text-decoration: none; color: #fff" href="../addsomething/index.html">Addsomething</a></li>
+                <li><a style="text-decoration: none; color: #fff" href="../choose/index.html">choose</a></li>
+               
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+<!-- SEARCH -->
+<h1>Take Whatever You Want</h1>
+<form >
+    <input type="text" id="search-input" oninput="getValue()" class="mash" placeholder="Search...">
+    <button id="search-button">Search</button>
+</form>
+
+
+<!-- MENU  -->
+<div id="menu">
+
+        <div class="card">
+            <div class="container2">
+                <div class="tittle" ><h3>1.Adjaruli Khachapuri</h3> </div>
+                    <input type="checkbox" id="body" >
+                    <label for="body" class="checkbox"> As soon as it’s served, you have to swirl the ingredients together with your fork until the egg and butter are completely blended with the mass of cheese.
+                    Then tear a piece of the bread and dunk in! </label>  
+                    <img src="images/acharuli" class="sakvebi">
+                    <input id="heart1" type="checkbox" /> 
+                    <label for="heart1" class="heart">❤</label>
+                </div>
+        </div>
+
+        <div class="card">      
+            <div class="container2">
+                <div class="tittle" ><h3>2.KHINKALI</h3> </div>    
+                    <input type="checkbox" id="body1" >
+                    <label for="body1" class="checkbox">The proper way to eat them is to grab the dumpling from its topknot, turn it upside down and take a small bite from the side. Slurp out the juice first before eating the rest.
+                    This way you’ll be able to eat the khinkali without getting covered in meaty juices (talking out of experience). Don’t worry if you’re a vegetarian, they also serve khinkali with potato, cheese or mushroom fillings.</label>
+                    <img src="images/khinkali" class="sakvebi">
+                    <input id="heart2" type="checkbox" /> 
+                    <label for="heart2" class="heart" >❤</label>
+                </div>
+        </div>
+
+        <div class="card">
+            <div class="container2">
+                <div class="tittle" ><h3>3.Adjaruli Khachapuri</h3> </div>
+                    <input type="checkbox" id="body2" >
+                    <label for="body" class="checkbox"> The first time I saw churchkhela, I thought it was some kind of decoration. Maybe people liked to hang colored sausages in the front windows of their stores? I later found out that it’s a traditional Georgian candy.
+                        The main ingredients are almonds, walnuts, hazelnuts or sometimes raisins that are threaded onto a string.
+                        The string is repeatedly dipped in concentrated fresh grape juice which dries into a chewy gelatin-like coating around the nuts. It’s packed with protein and sugar and it’s often served at home with coffee.                       
+                        A healthy candy for a sweet tooth like me!</label>
+                    <img src="images/CHURCHKHELA" class="sakvebi">
+                    <input id="heart3" type="checkbox" /> 
+                    <label for="heart3" class="heart" >❤</label>
+                </div>
+         </div>
+
+        <div class="card">           
+            <div class="container2">
+                <div class="tittle" ><h3>4.BADRIJANI NIGVZIT</h3> </div>
+                    <input type="checkbox" id="body4" >
+                    <label for="body4" class="checkbox"> Badrijani Nigzvit is a Georgian food that consists of fried eggplant rolls with walnut (sometimes mixed with garlic) filling. I’m not a big eggplant fan but I love this dish!
+                    It tastes sweet and salty at the same time and it’s a dish I would definitely add to our usual spaghetti and egg fried rice meals on the road!</label>
+                    <img src="images/badrijani-nigzvit" class="sakvebi">
+                    <input id="heart4" type="checkbox" /> 
+                    <label for="heart4" class="heart" >❤</label>
+                </div>
+        </div>
+
+        <div class="card">           
+            <div class="container2">
+                <div class="tittle" ><h3>5. KHACHAPURI</h3> </div>
+                    <input type="checkbox" id="body5" >
+                    <label for="body5" class="checkbox">Khachapuri is one of the most popular and traditional Georgian dishes. It’s a gooey cheese-filled bread that looks a little like pizza.
+                        Rich in carbohydrates and dairy, it could cause a lot of trouble to lactose-intolerants but they might find the cramps worth it because it’s finger-licking delicious!      
+                        There are three different kinds of khachapuri. The standard one is the Imeruli khachapuri.</label>
+                    <img src="images/imeruli" class="sakvebi">
+                    <input id="heart5" type="checkbox" /> 
+                    <label for="heart5" class="heart" >❤</label>
+                </div>
+        </div>
+
+        <div class="card">           
+            <div class="container2">
+                <div class="tittle" ><h3>6.LOBIO</h3> </div>
+                    <input type="checkbox" id="body6" >
+                    <label for="body6" class="checkbox">Lobio (which means kidney beans in Georgian) is a mix of bean soup and various kinds of cooked or stewed beans.
+                        The taste of this Georgian dish varies depending on if it’s prepared with coriander, walnuts, garlic, or onion. There are many varieties of lobio, depending on the region you’re in.
+                        When we were living in Tbilisi, our landlady often knocked on our door to hand us a big bowl of lobio which we gratefully devoured!</label>
+                    <img src="images/lobio" class="sakvebi">
+                    <input id="heart6" type="checkbox" /> 
+                    <label for="heart6" class="heart" >❤</label>
+                </div>
+        </div>
+
+        <div class="card">           
+            <div class="container2">
+                <div class="tittle" ><h3>7.LOBIANI</h3> </div>
+                    <input type="checkbox" id="body7" >
+                    <label for="body7" class="checkbox">You might see the resemblance of the word Lobio with Lobiani. Lobiani is a bean-filled bread.  It looks like an Imeruli khachapuri but with beans instead of cheese.
+                        It might sound like a weird combination but it’s super delicious!   
+                        The bread is baked in a wood-fired oven and when you bite into it, you’ll first feel the crispy texture of the bread on your tongue but wait until you taste the spiced, bacon-scented beans! A real mouthgasm!</label>
+                    <img src="images/lobiani" class="sakvebi">
+                    <input id="heart7" type="checkbox" /> 
+                    <label for="heart7" class="heart" >❤</label>
+                </div>
+        </div>
+
+        <div class="card">           
+            <div class="container2">
+                <div class="tittle" ><h3>8.MTSVADI</h3> </div>
+                    <input type="checkbox" id="body8" >
+                    <label for="body8" class="checkbox">Mtsvadi, also called the dish of kings, is an extraordinary Georgian food. The preparation is a ritual on its own.
+                        Mtsvadi, made with chunks of pork, mutton or veal, is first abundantly marinated in pomegranate juice or rubbed in a good dose of salt before it’s threaded onto a skewer and roasted on an open fire.  
+                        Warning: you’ll definitely be reaching for a few glasses of water (or wine) after eating this tender and juicy meat!</label>
+                    <img src="images/mtsvadi" class="sakvebi">
+                    <input id="heart8" type="checkbox" /> 
+                    <label for="heart8" class="heart" >❤</label>
+                </div>
+        </div>
+
+        <div class="card">           
+            <div class="container2">
+                <div class="tittle" ><h3>9.SACIVI</h3> </div>
+                    <input type="checkbox" id="body9" >  
+                    <label for="body9" class="checkbox">Sacivi is a chicken dish served with a thick sauce containing onion, garlic, walnuts, spices and herbs. This Georgian dish must be prepared in advance and chilled for 24 hours before it is served.
+                        It has a particular taste, especially when some coriander is added, but definitely worth trying!              
+                        I always loved to fill my plate with sacivi especially after eating a load of cheesy dishes.</label>
+                    <img src="images/sacivi." class="sakvebi">
+                    <input id="heart9" type="checkbox" /> 
+                    <label for="heart9" class="heart" >❤</label>
+                    
+                </div>
+        </div>
+
+        <div class="card">           
+            <div class="container2">
+                <div class="tittle" ><h3>10. KUCHMACHI</h3> </div>
+                    <input type="checkbox" id="body10" >
+                    <label for="body10" class="checkbox">You better first taste kuchmachi and then know what it is made of… Well, I’m going to tell you anyway but promise you still give it a go.
+                        Kuchmachi is a traditional dish made with the heart, liver, kidneys, spleen and sometimes lungs of pigs, young beef or chicken.
+                        The one I ate had only liver in it. It’s often served with walnuts and garnished with pomegranate seeds. It might not sound so tasty but it’s definitely worth trying!</label>
+                    <img src="images/kuchmachi" class="sakvebi">
+                    <input id="heart10" type="checkbox" /> 
+                    <label for="heart10" class="heart" >❤</label>
+                </div>
+        </div>
+         
+        <div class="card">           
+            <div class="container2">
+                <div class="tittle" ><h3>11. KHARCHO</h3> </div>
+                    <input type="checkbox" id="body11" >
+                    <label for="body11" class="checkbox">Kharcho is a traditional Georgian beef soup made with chopped walnuts, rice, cherry plum puree and often served with coriander. The soup has a spice mix that depends on the region of Georgia where it is prepared.
+                    It’s a hearty dish and definitely a good meal to have on a cold winter night (which they have often here in Georgia).</label>
+                    <img src="images/kharcho" class="sakvebi">
+                    <input id="heart11" type="checkbox" /> 
+                    <label for="heart11" class="heart" >❤</label>
+                </div>
+        </div>
+         
+       
+
+   
+
+</body>
+</html>

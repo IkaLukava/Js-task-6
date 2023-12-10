@@ -1,54 +1,65 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
-.body{
+
+
+
+nav{
     display: flex;
+    margin-top: 20px;
+    width: 100%;
     align-items: center;
-    justify-content: center;
-}
-.container{
-    background-position: center; 
-    width: 100vw;
-    height: 100vh;
-}
-.div{
-    height: 12%;
-    display: flex;
-    align-items: center; 
-}
-
-
-.header{
-   flex: 1;
-   text-align: center;
-}
-
-.header ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
-}
- .header :hover{
-    color: red;
-}
-.header ul li a{
+    justify-content: space-between;
+    /* position: relative; */
+    height: 70px;
+    font-size: 30px;
     text-decoration: none;
-    color: #fff;
-    font-size: 27px;
 }
 
 .logo{
-    width: 150px;
-    cursor: pointer;
-    margin-left: 40px;
+    width: 100px;
     border-radius: 20px;
+    color: #fff;
 }
 .logo:hover{
+    width: 110px;
     transition: 0.5s;
-    width: 160px;
+}
+
+nav ul{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-icon{
+    display: block;
+}
+
+@media (max-width: 370px){
+    nav{
+        display: flex;
+        font-size: 10px;
+        gap: 0px;
+    }
+    .nav-ul{
+        gap: 1px;
+    }
+    .logo{
+        width: 30px;
+    }
 }
 
 

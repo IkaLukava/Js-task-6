@@ -1,0 +1,555 @@
+body{
+    font-family:tahoma;
+}
+
+#search-input{
+  display: block;
+}
+
+h1{
+  font-size:36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 60px 0;
+  color: #fff;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#search-input{
+  width: 60%;
+  max-width: 400px;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+#search-button{
+  padding: 10px 20px;
+  background-color: #138065;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+
+.lup{
+  width: 30px;
+}
+
+
+#search{
+  display: block;
+  background: transparent;
+  width: 20vw;
+  height: 4vh;
+  border: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(3, 36, 3);
+  color: #fff;
+  cursor: pointer;
+}
+
+.tittle1{
+  justify-content: center;
+  display: flex;
+  color: #fff;
+}
+
+#menu{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); */
+    margin-top: 1rem;
+    gap: .25rem;
+    text-align: center;
+}
+
+.container2{
+    border: 1px solid black;
+    background-color: #fff;
+    padding: .5rem;
+}
+.card > .header{
+    margin-bottom: .25rem;
+}
+
+
+
+
+/* ===========================HEART INPUT ==========================*/
+input{
+   display: none;
+}
+
+.heart{
+  display: flex;
+  justify-content: end;
+}
+
+[id="heart2"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart2"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 2em;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart2"]:hover {
+  color: grey;
+}
+
+[for="heart2"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart2"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart2"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  /* animation: heart2 1s cubic-bezier(.17, .89, .32, 1.49); */
+}
+@keyframes heart2 {0%, 17.5% {font-size: 0;}}
+
+
+
+
+.heart1{
+  display: flex;
+  justify-content: end;
+}
+
+[id="heart1"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart1"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 2em;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart1"]:hover {
+  color: grey;
+}
+
+[for="heart1"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart1"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart1"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  /* animation: heart1 1s cubic-bezier(.17, .89, .32, 1.49); */
+}
+@keyframes heart1 {0%, 17.5% {font-size: 0;}}
+
+
+
+
+.heart3{
+  display: flex;
+  justify-content: end;
+}
+
+[id="heart3"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart3"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 2em;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart3"]:hover {
+  color: grey;
+}
+
+[for="heart3"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart3"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart3"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  /* animation: heart3 1s cubic-bezier(.17, .89, .32, 1.49); */
+}
+@keyframes heart3 {0%, 17.5% {font-size: 0;}}
+
+
+
+.heart4{
+  display: flex;
+  justify-content: end;
+}
+
+[id="heart4"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart4"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 2em;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart4"]:hover {
+  color: grey;
+}
+
+[for="heart4"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart4"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart4"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  /* animation: heart4 1s cubic-bezier(.17, .89, .32, 1.49); */
+}
+@keyframes heart4 {0%, 17.5% {font-size: 0;}}
+
+
+
+.heart5{
+  display: flex;
+  justify-content: end;
+}
+
+[id="heart5"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart5"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 2em;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart5"]:hover {
+  color: grey;
+}
+
+[for="heart5"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart5"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart5"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  /* animation: heart5 1s cubic-bezier(.17, .89, .32, 1.49); */
+}
+@keyframes heart5 {0%, 17.5% {font-size: 0;}}
+
+
+
+
+.heart6{
+  display: flex;
+  justify-content: end;
+}
+
+[id="heart6"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart6"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 2em;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart6"]:hover {
+  color: grey;
+}
+
+[for="heart6"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart6"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart6"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  /* animation: heart6 1s cubic-bezier(.17, .89, .32, 1.49); */
+}
+@keyframes heart6 {0%, 17.5% {font-size: 0;}}
+
+
+
+.heart7{
+  display: flex;
+  justify-content: end;
+}
+
+[id="heart7"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart7"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 2em;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart7"]:hover {
+  color: grey;
+}
+
+[for="heart7"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart7"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart7"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  /* animation: heart7 1s cubic-bezier(.17, .89, .32, 1.49); */
+}
+@keyframes heart7 {0%, 17.5% {font-size: 0;}}
+
+
+
+.heart8{
+  display: flex;
+  justify-content: end;
+}
+
+[id="heart8"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart8"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 2em;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart8"]:hover {
+  color: grey;
+}
+
+[for="heart8"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart8"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart8"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  /* animation: heart8 1s cubic-bezier(.17, .89, .32, 1.49); */
+}
+@keyframes heart8 {0%, 17.5% {font-size: 0;}}
+
+
+
+
+.heart9{
+  display: flex;
+  justify-content: end;
+}
+
+[id="heart9"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart9"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 2em;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart9"]:hover {
+  color: grey;
+}
+
+[for="heart9"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart9"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart9"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  /* animation: heart9 1s cubic-bezier(.17, .89, .32, 1.49); */
+}
+@keyframes heart9 {0%, 17.5% {font-size: 0;}}
+
+
+
+
+.heart10{
+  display: flex;
+  justify-content: end;
+}
+
+[id="heart10"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart10"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 2em;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart10"]:hover {
+  color: grey;
+}
+
+[for="heart10"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart10"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart10"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  /* animation: heart10 1s cubic-bezier(.17, .89, .32, 1.49); */
+}
+@keyframes heart {0%, 17.5% {font-size: 0;}}
+
+
+
+.heart11{
+  display: flex;
+  justify-content: end;
+}
+
+[id="heart11"] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for="heart11"] {
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 2em;
+  align-self: center;  
+  transition: color 0.2s ease-in-out;
+}
+
+[for="heart11"]:hover {
+  color: grey;
+}
+
+[for="heart11"]::selection {
+  color: none;
+  background: transparent;
+}
+
+[for="heart11"]::moz-selection {
+  color: none;
+  background: transparent;
+}
+
+[id="heart11"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  /* animation: heart11 1s cubic-bezier(.17, .89, .32, 1.49); */
+}
+@keyframes heart11 {0%, 17.5% {font-size: 0;}}
+
+
+.sakvebi{
+  width: 200px;
+}

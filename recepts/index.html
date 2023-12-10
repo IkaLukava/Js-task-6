@@ -13,25 +13,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,300;1,800&family=Poppins:ital,wght@0,100;0,300;0,600;0,700;0,900;1,100;1,200;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400;1,500;1,700&family=Rubik+Bubbles&display=swap" 
     rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../recepts/style.css">
     <link rel="stylesheet" href="../share/share.css">
 </head>
 <body style="background-image: url(../share/image/backk);background-position: center; background-size: cover;">
+  
     <div class="container">
-    <!-- -------------------------HEADER-------------------- -->
-        <div class="div">
-            <nav class="header">
-                <ul>
-                    <li><a href="../index.html">Main</a></li>
-                    <li><a href="../recepts/index.html">Recepts</a></li>
-                    <li><a href="">Add Whatever you want</a></li>
-                    <li><a href="">Your Choic</a></li>
-                </ul>
-            </nav>
-            <a href="../index.html">
-                <img src="../share/image/logo.jpg" class="logo">
-            </a>
-</div>
+        <!-- -------------------------HEADER-------------------- -->
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../share/image/logo.jpg" class="logo">
+                </a>
+            </div>
+            <ul id="menuList">
+                <li><a href="../index.html">Main</a></li>
+                <li><a href="../recepts/index.html">Recepts</a></li>
+                <li><a href="../addsomething/index.html">Addsomething</a></li>
+                <li><a href="../choose/index.html">choose</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
 
 
 <div class="container2">
@@ -83,9 +87,17 @@
             </ul>
         </div>
     </div>
+    <div class="container3">
+        <h1>Recipe Finder</h1>
+        <form>
+            <input type="text" id="search" placeholder="Enter ingredients">
+            <button type="button" id="submit" class="btn">Search</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
 </div>
-
-
-<script src="app.js"></script>
+    
+<script src="../recepts/app.js"></script>
 </body>
 </html>
